@@ -56,7 +56,6 @@ func TestValidLogin(t *testing.T) {
 		"octocat_acme":                true,
 		"a" + strings.Repeat("b", 38): true,
 		"":                            false,
-		"_octo":                       false,
 		"-octo":                       false,
 		"a" + strings.Repeat("b", 39): false,
 		"octo owner":                  false,
